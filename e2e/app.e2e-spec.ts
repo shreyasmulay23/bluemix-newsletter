@@ -1,14 +1,14 @@
-import { AppPage } from './app.po';
+import { BluemixHelloAngular2Page } from './app.po';
 
-describe('newsletter App', () => {
-  let page: AppPage;
+describe('bluemix-hello-angular2 App', () => {
+  let page: BluemixHelloAngular2Page;
 
   beforeEach(() => {
-    page = new AppPage();
+    page = new BluemixHelloAngular2Page();
   });
 
-  it('should display welcome message', () => {
+  it('should display message saying hello world', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Welcome to app!');
+    expect(page.getParagraphText()).toEqual('Hello world!');
   });
 });
